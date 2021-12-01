@@ -4,5 +4,21 @@
 }
 
 body {
-    background-color: rgb(66, 66, 252);
+    background-color: #1D2731;
+}
+
+.navbar{
+    background-color: #0B3C5D;
+    margin: 0;
+}
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #FFCB05;
+    padding: 2em;
+    width: 100%;
+    text-align: center;
+    color: #fff;
 }
