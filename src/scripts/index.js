@@ -1,4 +1,11 @@
 import 'regenerator-runtime';
 import '../styles/main.css';
+import App from './views/app';
 
-console.log('haloo');
+const app = new App({
+  content: document.querySelector('#content'),
+});
+
+window.addEventListener('load', () => {
+  app.renderPage();
+});
