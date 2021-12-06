@@ -1,7 +1,7 @@
 import TheGamesDbSource from '../../data/thegamesdb-source';
 import { createGameNewRelase, createGamesRecomendation } from '../templates/templeate-creator';
 
-const Home = {
+const home = {
   async render() {
     return `
     <div class="card-recommendations">
@@ -29,7 +29,6 @@ const Home = {
       </div>
     </div>`;
   },
-
   async afterRender() {
     const gamesRecomendationData = await TheGamesDbSource.recommendedGame();
     const gameRecomendationContainer = document.querySelector('#game-container');
@@ -46,4 +45,4 @@ const Home = {
 
 };
 
-export default Home;
+export default home;

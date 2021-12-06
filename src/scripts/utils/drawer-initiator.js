@@ -1,13 +1,12 @@
 const DrawerInitiator = {
   init({ content }) {
     content.addEventListener('click', (event) => {
-      this._closeDrawer(event, drawer);
+      this._closeDrawer(event);
     });
   },
 
-  _closeDrawer(event, drawer) {
+  _closeDrawer(event) {
     event.stopPropagation();
-    drawer.classList.remove('open');
   },
 };
 

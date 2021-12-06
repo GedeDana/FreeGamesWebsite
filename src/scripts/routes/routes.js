@@ -1,8 +1,11 @@
-import Home from '../views/pages/home';
+import home from '../views/pages/home';
+import categoryList from '../views/pages/categoryList';
 
 const routes = {
-  '/': Home,
-  '/home': Home,
+  '/': home,
+  '/home': home,
+  '/category': categoryList,
+
 };
 
 export default routes;
