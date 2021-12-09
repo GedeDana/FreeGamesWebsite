@@ -154,6 +154,15 @@ footer {
     color: #fff;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #FFCB05;
+}
+
 /* breakpoints */
 @media (max-width: 991.98px) { 
     .infoGroup {

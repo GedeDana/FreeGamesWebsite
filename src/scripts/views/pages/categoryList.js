@@ -27,7 +27,7 @@ const categoryList = {
       const inputValue = document.querySelector('#value').value;
       const gamesCategorylistData = await TheGamesDbSource.filterByCategory(inputValue);
       const gamesCategoryContainer = document.querySelector('#game-category-container');
-      gamesCategorylistData.slice(0, 3).forEach((game) => {
+      gamesCategorylistData.forEach((game) => {
         gamesCategoryContainer.innerHTML += createGameByCategory(game);
       });
     }
