@@ -4,7 +4,12 @@ import { createGameNewRelase, createGamesRecomendation } from '../templates/temp
 const home = {
   async render() {
     return `
-    <div class="card-recommendations">
+    <div id="jumbotron" class="jumbotron">
+      <div class="layer"></div>
+      <h2 class="headline">Explore Free Games For Free</h2>
+    </div>
+
+    <div class="card-recommendations" tabindex="0">
        <div class="container">
         <h3 class="title fw-bold">Recommendations</h3>
           <div class="row row-cols-3" id="game-container">
@@ -13,18 +18,33 @@ const home = {
        </div>
     </div>
   
+    <div class="listPlatform container">
+      <h3 class="title fw-bold">by Platform</h3>
+      <div class="row">
+        <div class="col">
+          <div class="card bg-dark text-white platform">
+            <img src="/temp-img/valo.png" class="card-img" alt="Windows">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Windows</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-dark text-white platform">
+            <img src="/temp-img/valo.png" class="card-img" alt="Web Browser">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Web Browser</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="content-group">
       <div class="container">
-        <div class="row row-cols-2">
-          <div class="col-8">
-           <div class="container">
-              <h3 class="title fw-bold">New Release</h3>
-              <div class="card-content" id="game-rec-container">
+        <h3 class="title fw-bold">New Release</h3>
+        <div class="card-content" id="game-rec-container">
               
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>`;

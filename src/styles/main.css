@@ -8,9 +8,46 @@ body {
     color: #F2F2F2;
 }
 
-.navbar{
+.btn,
+a {
+    min-height: 44px;
+}
+
+.navbar {
     background-color: #0B3C5D;
     margin: 0;
+}
+
+hr {
+    border: 1px solid #FFCB05;
+}
+
+.navbar a,
+#navlist {
+    color: #F2F2F2;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar-brand > img {
+    width: 100%;
+    max-height: 50px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,203,5, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+  
+.custom-toggler.navbar-toggler {
+    border-color: #FFCB05;
+} 
+
+.collapse {
+    justify-content: space-between;
+}
+
+.myLibrary {
+    border: 2px solid #FFCB05;
+    border-radius: 5px;
 }
 
 .jumbotron {
@@ -53,8 +90,57 @@ body {
 .card-recommendations,
 .content-group {
     width: 100%;
-    max-width: 1100px;
     margin: 20px auto;
+}
+
+/* Detail */
+.gameThumbnail {
+    width: 100%;
+    background-color: #FFCB05;
+    position: relative;
+    margin: 0 0 5.5em 0;
+}
+.gameThumbnailBG {
+    margin: 0 auto 0 auto;
+    transform: translateY(4em);
+    position: relative;
+}
+
+.gameThumbnailBG >  img {
+    margin: 0 auto;
+    width: 70%;
+    display: block;
+}
+
+.gameThumbnailBG > video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 71%;
+    display: block;
+}
+
+.platform{
+    border-bottom: 2px solid #FFCB05;
+}
+
+.playNow {
+    background-color: transparent;
+    padding: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.30em;
+    border: 2px solid #FFCB05;
+}
+.playNow > a {
+    text-decoration: none;
+    color: white;
+}
+
+.carousel {
+    width: 100%;
 }
 
 footer {
@@ -66,4 +152,21 @@ footer {
     width: 100%;
     text-align: center;
     color: #fff;
+}
+
+/* breakpoints */
+@media (max-width: 991.98px) { 
+    .infoGroup {
+        display: inline;
+    }
+}
+
+@media (max-width: 540px) { 
+    .gameTitle {
+        display: inline;
+    }
+    .playNow {
+        margin-top: 8px;
+        width: 100%;
+    }
 }
