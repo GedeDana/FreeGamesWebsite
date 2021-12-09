@@ -6,6 +6,8 @@ const API_ENDPOINT = {
   FILTER_BY_CATEGORY: (key) => `${CONFIG.BASE_URL}/api/games?category=${key}`,
   GAME_LIST: `${CONFIG.BASE_URL}api/games?sort-by=alphabetical`,
   DETAIL: (id) => `${CONFIG.BASE_URL}api/game?id=${id}`,
+  WINDOWS_PLATFORM_GAME: `${CONFIG.BASE_URL}api/games?platform=pc`,
+  BROSWER_PLATFORM_GAME: `${CONFIG.BASE_URL}api/games?platform=browser`,
 };
 
 export default API_ENDPOINT;

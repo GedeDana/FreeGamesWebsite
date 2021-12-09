@@ -80,13 +80,13 @@ const createDetailGames = (game) => `
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="https://www.freetogame.com/g/474/rocket-league-1.jpg" class="d-block w-100" alt="...">
+              <img src="${game.screenshots[0].image}" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="https://www.freetogame.com/g/474/rocket-league-2.jpg" class="d-block w-100" alt="...">
+                <img src="${game.screenshots[1].image}" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="https://www.freetogame.com/g/474/rocket-league-3.jpg" class="d-block w-100" alt="...">
+              <img src="${game.screenshots[2].image}" class="d-block w-100" alt="...">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -158,13 +158,34 @@ const createDetailGames = (game) => `
     </div>
   </div>
 </div>
-
-
-
 `;
+
+const createGameBasePlatformPc = () => `    
+  <div class="col">
+    <div class="card bg-dark text-white platform">
+      <img src="/temp-img/valo.png" class="card-img" alt="Windows">
+      <div class="card-img-overlay">
+        <h5 class="card-title"><a href="/#/windows/">Windows</a></h5>
+      </div>
+    </div>
+  </div>
+`;
+
+const createGameBasePlatformBroswer = () => `    
+  <div class="col">
+    <div class="card bg-dark text-white platform">
+      <img src="/temp-img/valo.png" class="card-img" alt="Windows">
+      <div class="card-img-overlay">
+        <h5 class="card-title"><a href="/#/windows/">Web Broswer</a></h5>
+      </div>
+  </div>
+`;
+
 export {
   createGamesRecomendation,
   createGameNewRelase,
   createGameByCategory,
   createDetailGames,
+  createGameBasePlatformPc,
+  createGameBasePlatformBroswer,
 };

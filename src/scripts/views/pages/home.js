@@ -1,5 +1,7 @@
 import TheGamesDbSource from '../../data/thegamesdb-source';
-import { createGameNewRelase, createGamesRecomendation } from '../templates/templeate-creator';
+import {
+  createGameNewRelase, createGamesRecomendation,
+} from '../templates/templeate-creator';
 
 const home = {
   async render() {
@@ -20,20 +22,20 @@ const home = {
   
     <div class="listPlatform container">
       <h3 class="title fw-bold">by Platform</h3>
-      <div class="row">
+      <div class="row" id="game-by-platformPc">
         <div class="col">
           <div class="card bg-dark text-white platform">
             <img src="/temp-img/valo.png" class="card-img" alt="Windows">
             <div class="card-img-overlay">
-              <h5 class="card-title">Windows</h5>
+              <h5 class="card-title"><a href="/#/windows/">Windows</a></h5>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card bg-dark text-white platform">
-            <img src="/temp-img/valo.png" class="card-img" alt="Web Browser">
+            <img src="/temp-img/valo.png" class="card-img" alt="Windows">
             <div class="card-img-overlay">
-              <h5 class="card-title">Web Browser</h5>
+              <h5 class="card-title"><a href="/#/broswer/">Web Broswer</a></h5>
             </div>
           </div>
         </div>
@@ -62,7 +64,6 @@ const home = {
       gameNewReleaseContainer.innerHTML += createGameNewRelase(game);
     });
   },
-
 };
 
 export default home;
