@@ -5,7 +5,7 @@ import UrlParser from '../../routes/url-parser';
 const Detail = {
   async render() {
     return `
-        <div class="game-detail">
+        <div class="game-detail" tabindex="0">
         </div>
     `;
   },

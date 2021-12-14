@@ -25,7 +25,7 @@ const home = {
       <div class="row" id="game-by-platformPc">
         <div class="col">
           <div class="card bg-dark text-white platform">
-            <img src="/temp-img/valo.png" class="card-img" alt="Windows">
+            <img src="/temp-img/windows.png" class="card-img" alt="Windows">
             <div class="card-img-overlay">
               <h5 class="card-title"><a href="/#/windows/">Windows</a></h5>
             </div>
@@ -33,7 +33,7 @@ const home = {
         </div>
         <div class="col">
           <div class="card bg-dark text-white platform">
-            <img src="/temp-img/valo.png" class="card-img" alt="Windows">
+            <img src="/temp-img/browser.png" class="card-img" alt="Windows">
             <div class="card-img-overlay">
               <h5 class="card-title"><a href="/#/broswer/">Web Broswer</a></h5>
             </div>

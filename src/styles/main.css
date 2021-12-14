@@ -28,7 +28,8 @@ hr {
     text-decoration: none;
     font-weight: bold;
 }
-.navbar-brand > img {
+.navbar-brand > img,
+.logo-brand {
     width: 100%;
     max-height: 50px;
 }
@@ -109,6 +110,7 @@ hr {
 .gameThumbnailBG >  img {
     margin: 0 auto;
     width: 70%;
+    height: 600px;
     display: block;
 }
 
@@ -119,6 +121,7 @@ hr {
     right: 0;
     margin: auto;
     width: 71%;
+    height: 600px;
     display: block;
 }
 
