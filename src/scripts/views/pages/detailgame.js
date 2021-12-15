@@ -1,11 +1,12 @@
 import TheGamesDbSource from '../../data/thegamesdb-source';
-import { createDetailGames } from '../templates/templeate-creator';
+import { createDetailGames, createDetailGamesNoMinimumSpec, createDetailGamesNoPitcure } from '../templates/templeate-creator';
 import UrlParser from '../../routes/url-parser';
 
 const Detail = {
   async render() {
     return `
-        <div class="game-detail" tabindex="0">
+        <div class="game-detail">
+          
         </div>
     `;
   },
@@ -14,7 +15,15 @@ const Detail = {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const game = await TheGamesDbSource.detailGame(url.id);
     const gameDetailContainder = document.querySelector('.game-detail');
-    gameDetailContainder.innerHTML = createDetailGames(game);
+    if (game.minimum_system_requirements === undefined) {
+      if (game.image === undefined) {
+        gameDetailContainder.innerHTML = createDetailGamesNoPitcure(game);
+      } else {
+        gameDetailContainder.innerHTML = createDetailGamesNoMinimumSpec(game);
+      }
+    } else {
+      gameDetailContainder.innerHTML = createDetailGames(game);
+    }
   },
 };
 

@@ -3,8 +3,9 @@ import routes from '../routes/routes';
 import DrawerInitiator from '../utils/drawer-initiator';
 
 class App {
-  constructor({ content }) {
+  constructor({ content, loading }) {
     this._content = content;
+    this._loading = loading;
 
     this._initialAppShell();
   }
@@ -12,6 +13,7 @@ class App {
   _initialAppShell() {
     DrawerInitiator.init({
       content: this._content,
+      loading: this._loading,
     });
 
     // kita bisa menginisiasikan komponen lain bila ada

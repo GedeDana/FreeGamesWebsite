@@ -39,16 +39,14 @@ const categoryList = {
 
   async afterRender() {
     const buttonValue = document.querySelector('#clickButton');
-
-    async function getValue() {
+    buttonValue.addEventListener('click', async () => {
       const inputValue = document.querySelector('#value').value;
       const gamesCategorylistData = await TheGamesDbSource.filterByCategory(inputValue);
       const gamesCategoryContainer = document.querySelector('#game-category-container');
       gamesCategorylistData.forEach((game) => {
         gamesCategoryContainer.innerHTML += createGameByCategory(game);
       });
-    }
-    buttonValue.addEventListener('click', getValue);
+    });
   },
 };
 
