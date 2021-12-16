@@ -1,45 +1,51 @@
 const createGamesRecomendation = (game) => `
 <div class="col">
-  <div class="card">
-    <img src="${game.thumbnail}" class="card-img-top" alt="${game.thumbnail}">
-    <div class="card-body">
-      <h4 class="card-text"><a href="${`/#/detail/${game.id}`}">${game.title}</a></h4>
+  <a href="${`/#/detail/${game.id}`}">
+    <div class="card">
+      <img src="${game.thumbnail}" class="card-img-top" alt="${game.thumbnail}">
+      <div class="card-body">
+        <h4 class="card-text">${game.title}</h4>
     </div>
-  </div>
+  </a>
+</div>
 `;
 
 const createGameNewRelase = (game) => `
-<div class="card mb-3">
-  <div class="row g-0">
-    <div class="col-lg-5 col-md-6">
-      <img src="${game.thumbnail}" class="img-fluid rounded-start card-img" alt="${game.title} pitcure">
-    </div>
-    <div class="col-lg-7 col-md-6">
-      <div class="card-body">
-        <h5 class="card-title"><a href="${`/#/detail/${game.id}`}">${game.title}</a></h5>
-        <p class="card-text">${game.short_description}</p>
-        <p class="card-text"><small class="text-muted">${game.genre}</small></p>
+<a href="${`/#/detail/${game.id}`}">
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-lg-4 col-md-6">
+        <img src="${game.thumbnail}" class="img-fluid rounded-start card-img" alt="${game.title} pitcure">
+      </div>
+      <div class="col-lg-8 col-md-6">
+        <div class="card-body">
+          <h5 class="card-title">${game.title}</h5>
+          <p class="card-text">${game.short_description}</p>
+          <p class="card-text"><small class="text-muted">${game.genre}</small></p>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</a>
 `;
 
 const createGameByCategory = (game) => `
-<div class="card mb-3">
-  <div class="row g-0">
-    <div class="col-md-3">
-      <img src="${game.thumbnail}" class="img-fluid rounded-start" alt="${game.title} pitcure">
-    </div>
-    <div class="col-md-9">
-      <div class="card-body">
-        <h5 class="card-title"><a href="${`/#/detail/${game.id}`}">${game.title}</a></h5>
-        <p class="card-text">${game.short_description}</p>
-        <p class="card-text"><small class="text-muted">${game.genre}</small></p>
+<a href="${`/#/detail/${game.id}`}">
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-lg-4 col-md-6">
+        <img src="${game.thumbnail}" class="img-fluid rounded-start card-img" alt="${game.title} pitcure">
+      </div>
+      <div class="col-lg-8 col-md-6">
+        <div class="card-body">
+          <h5 class="card-title">${game.title}</h5>
+          <p class="card-text">${game.short_description}</p>
+          <p class="card-text"><small class="text-muted">${game.genre}</small></p>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</a>
 `;
 
 const createDetailGames = (game) => `
