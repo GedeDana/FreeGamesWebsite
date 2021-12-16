@@ -1,0 +1,16 @@
+/* breakpoints */
+@media (max-width: 992px) { 
+    .infoGroup {
+        display: inline;
+    }
+}
+
+@media (max-width: 576px) { 
+    .gameTitle {
+        display: inline;
+    }
+    .playNow {
+        margin-top: 8px;
+        width: 100%;
+    }
+}

@@ -14,7 +14,7 @@ const home = {
     <div class="card-recommendations" tabindex="0">
        <div class="container">
         <h3 class="title fw-bold">Recommendations</h3>
-          <div class="row row-cols-3" id="game-container">
+          <div class="row row-cols-2 row-cols-lg-4 g-3" id="game-container">
 
           </div>
        </div>
@@ -22,7 +22,7 @@ const home = {
   
     <div class="listPlatform container">
       <h3 class="title fw-bold">by Platform</h3>
-      <div class="row" id="game-by-platformPc">
+      <div class="row row-cols-2" id="game-by-platformPc">
         <div class="col">
           <div class="card bg-dark text-white platform">
             <img src="/temp-img/windows.png" class="card-img" alt="Windows">
@@ -33,7 +33,7 @@ const home = {
         </div>
         <div class="col">
           <div class="card bg-dark text-white platform">
-            <img src="/temp-img/browser.png" class="card-img" alt="Windows">
+            <img src="/temp-img/browser.png" class="card-img" alt="Browser">
             <div class="card-img-overlay">
               <h5 class="card-title"><a href="/#/broswer/">Web Broswer</a></h5>
             </div>
@@ -54,7 +54,7 @@ const home = {
   async afterRender() {
     const gamesRecomendationData = await TheGamesDbSource.recommendedGame();
     const gameRecomendationContainer = document.querySelector('#game-container');
-    gamesRecomendationData.slice(0, 3).forEach((game) => {
+    gamesRecomendationData.slice(0, 4).forEach((game) => {
       gameRecomendationContainer.innerHTML += createGamesRecomendation(game);
     });
 
