@@ -6,15 +6,9 @@ const categoryList = {
     return `
     <div class="content-group" tabindex="0">
       <div class="container">
-        <div class="row row-cols-2">
-          <div class="col-8 ">
-          <div class="container">
-              <h3 class="title fw-bold">Game Category List</h3>
-              <div class="card-content" id="game-category-container">
-              
-              </div>
-            </div>
-          </div>
+        <h3 class="title fw-bold">Game Category List</h3>
+        <div class="card-content" id="game-category-container">
+        
         </div>
       </div>
       <nav aria-label="Page navigation example">

@@ -1,7 +1,7 @@
 const createGamesRecomendation = (game) => `
 <div class="col">
   <div class="card">
-    <img src="${game.thumbnail}" class="card-img-top" alt="Valorant">
+    <img src="${game.thumbnail}" class="card-img-top" alt="${game.thumbnail}">
     <div class="card-body">
       <h4 class="card-text"><a href="${`/#/detail/${game.id}`}">${game.title}</a></h4>
     </div>
@@ -11,10 +11,10 @@ const createGamesRecomendation = (game) => `
 const createGameNewRelase = (game) => `
 <div class="card mb-3">
   <div class="row g-0">
-    <div class="col-md-4">
-      <img src="${game.thumbnail}" class="img-fluid rounded-start" alt="${game.title} pitcure">
+    <div class="col-lg-5 col-md-6">
+      <img src="${game.thumbnail}" class="img-fluid rounded-start card-img" alt="${game.title} pitcure">
     </div>
-    <div class="col-md-8">
+    <div class="col-lg-7 col-md-6">
       <div class="card-body">
         <h5 class="card-title"><a href="${`/#/detail/${game.id}`}">${game.title}</a></h5>
         <p class="card-text">${game.short_description}</p>
@@ -28,10 +28,10 @@ const createGameNewRelase = (game) => `
 const createGameByCategory = (game) => `
 <div class="card mb-3">
   <div class="row g-0">
-    <div class="col-md-4">
+    <div class="col-md-3">
       <img src="${game.thumbnail}" class="img-fluid rounded-start" alt="${game.title} pitcure">
     </div>
-    <div class="col-md-8">
+    <div class="col-md-9">
       <div class="card-body">
         <h5 class="card-title"><a href="${`/#/detail/${game.id}`}">${game.title}</a></h5>
         <p class="card-text">${game.short_description}</p>

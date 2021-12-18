@@ -12,6 +12,13 @@ body {
 a {
     min-height: 44px;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: #FFCB05;
+}
 
 .navbar {
     background-color: #0B3C5D;
@@ -28,8 +35,7 @@ hr {
     text-decoration: none;
     font-weight: bold;
 }
-.navbar-brand > img,
-.logo-brand {
+.navbar-brand > img{
     width: 100%;
     max-height: 50px;
 }
@@ -81,6 +87,10 @@ hr {
     border-color: #FFCB05;
     border-width: 3px;
     background-color: #0B3C5D;
+}
+.card-img {
+    background-size: cover;
+    background-position: center;
 }
 
 .title,
@@ -153,18 +163,34 @@ footer {
     background-color: #FFCB05;
     padding: 2em;
     width: 100%;
+    text-align: left;
+    color: #1D2731;
+}
+
+.api-about {
+    margin-top: 16px;
+    font-weight: bolder;
+}
+.aboutUs > a:hover {
+    color: #146296;
+}
+.aboutUs > a {
+    color: #1D2731;
+}
+
+.contactUs > ul {
+    margin-top: 8px;
+    list-style: none;
+    padding: 0;
+}
+
+.foot-logo {
     text-align: center;
-    color: #fff;
+}
+.logo-brand {
+    width: 100%;
 }
 
-a{
-    text-decoration: none;
-    color: white;
-}
-
-a:hover {
-    color: #FFCB05;
-}
 /* Bookmark */
 
 .bookmark {
@@ -181,6 +207,7 @@ a:hover {
 
 
 /* Loading */
+
 .lds-dual-ring {
     display: inline-block;
     width: 80px;
@@ -206,20 +233,3 @@ a:hover {
     }
   }
 
-/* breakpoints */
-@media (max-width: 991.98px) { 
-    .infoGroup {
-        display: inline;
-    }
-}
-
-@media (max-width: 540px) { 
-    .gameTitle {
-        display: inline;
-    }
-    .playNow {
-        margin-top: 8px;
-        width: 100%;
-       
-    }
-}
