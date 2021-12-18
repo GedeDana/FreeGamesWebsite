@@ -1,7 +1,7 @@
 import CONFIG from '../globals/config';
 
 const CacheHelper = {
-  async cachingAppSheel(requests) {
+  async cachingAppShell(requests) {
     const cache = await this._openCache();
     cache.addAll(requests);
   },
@@ -10,14 +10,13 @@ const CacheHelper = {
     const cacheNames = await caches.keys();
     cacheNames
       .filter((name) => name !== CONFIG.CACHE_NAME)
-      .map((filterredName) => caches.delete(filterredName));
+      .map((filteredName) => caches.delete(filteredName));
   },
 
   async revalidateCache(request) {
     const response = await caches.match(request);
 
     if (response) {
-      this._fetchRequest(request);
       return response;
     }
     return this._fetchRequest(request);
