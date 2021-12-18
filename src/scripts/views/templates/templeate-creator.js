@@ -63,6 +63,7 @@ const createDetailGames = (game) => `
       <span class="gameCategory">Status: ${game.status}</span>
     </div>
     <div class="col d-flex justify-content-end">
+      <div id="bookmarkButtonContainer"></div>
       <button class="playNow px-5 fw-bold btn-outline-warning"><a href="${game.game_url}">Play Now</a></button>
     </div>
   </div>
@@ -179,6 +180,7 @@ const createDetailGamesNoMinimumSpec = (game) => `
     <span class="gameCategory">Status: ${game.status}</span>
   </div>
   <div class="col d-flex justify-content-end">
+    <div id="bookmarkButtonContainer"></div>
     <button class="playNow px-5 fw-bold btn-outline-warning"><a href="${game.game_url}">Play Now</a></button>
   </div>
 </div>
@@ -282,6 +284,7 @@ const createDetailGamesNoPitcure = (game) => `
     <span class="gameCategory">Status: ${game.status}</span>
   </div>
   <div class="col d-flex justify-content-end">
+    <div id="bookmarkButtonContainer"></div>
     <button class="playNow px-5 fw-bold btn-outline-warning"><a href="${game.game_url}">Play Now</a></button>
   </div>
 </div>
@@ -357,6 +360,17 @@ const createGameBasePlatformBroswer = () => `
   </div>
 `;
 
+const createBookmarkGamesTemplate = () => `
+  <button arial-label="bookmark this game" id="bookmarkButton" class="bookmark">
+    <i class="far fa-bookmark"></i> 
+  </button>
+`;
+const createUnbookmarkGamesTemplate = () => `
+  <button arial-label="unbookmark this game" id="bookmarkButton" class="bookmark">
+    <i class="fas fa-bookmark"></i>
+  </button>
+`;
+
 export {
   createGamesRecomendation,
   createGameNewRelase,
@@ -366,4 +380,6 @@ export {
   createDetailGamesNoPitcure,
   createGameBasePlatformPc,
   createGameBasePlatformBroswer,
+  createBookmarkGamesTemplate,
+  createUnbookmarkGamesTemplate,
 };
