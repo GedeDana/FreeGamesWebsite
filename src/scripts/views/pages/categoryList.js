@@ -31,17 +31,23 @@ const categoryList = {
     </div>`;
   },
 
-  async afterRender() {
+  initializeButton() {
     const buttonValue = document.querySelector('#clickButton');
-    buttonValue.addEventListener('click', async () => {
+    buttonValue.addEventListener('click', () => {
       const inputValue = document.querySelector('#value').value;
-      const gamesCategorylistData = await TheGamesDbSource.filterByCategory(inputValue);
-      const gamesCategoryContainer = document.querySelector('#game-category-container');
-      gamesCategorylistData.forEach((game) => {
-        gamesCategoryContainer.innerHTML += createGameByCategory(game);
-      });
+      TheGamesDbSource.filterByCategory(inputValue)
+        .then((gamesCategorylistData) => {
+          const gamesCategoryContainer = document.querySelector('#game-category-container');
+          gamesCategoryContainer.innerHTML = '';
+
+          gamesCategorylistData.forEach((game) => {
+            gamesCategoryContainer.innerHTML += createGameByCategory(game);
+          });
+        });
     });
   },
+
+  afterRender: null,
 };
 
 export default categoryList;
