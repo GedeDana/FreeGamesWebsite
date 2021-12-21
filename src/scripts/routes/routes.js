@@ -4,6 +4,7 @@ import Detail from '../views/pages/detailgame';
 import GameList from '../views/pages/gameList';
 import GamesbyPlatformPc from '../views/pages/gameBasePlatformpc';
 import GamesbyPlatformWeb from '../views/pages/gameBasePlatformWeb';
+import Bookmark from '../views/pages/bookmark';
 
 const routes = {
   '/': home,
@@ -13,6 +14,7 @@ const routes = {
   '/list': GameList,
   '/windows': GamesbyPlatformPc,
   '/broswer': GamesbyPlatformWeb,
+  '/bookmark': Bookmark,
 };
 
 export default routes;

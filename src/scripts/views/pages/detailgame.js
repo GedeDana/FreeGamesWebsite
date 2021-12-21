@@ -36,8 +36,9 @@ const Detail = {
         id: game.id,
         title: game.title,
         platform: game.platform,
-        description: game.description,
+        short_description: game.short_description,
         thumbnail: game.thumbnail,
+        genre: game.genre,
 
       },
     });

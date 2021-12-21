@@ -48,6 +48,25 @@ const createGameByCategory = (game) => `
 </a>
 `;
 
+const createGameByBookmark = (game) => `
+<a href="${`/#/detail/${game.id}`}">
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-lg-4 col-md-6">
+        <img src="${game.thumbnail}" class="img-fluid rounded-start card-img" alt="${game.title} pitcure">
+      </div>
+      <div class="col-lg-8 col-md-6">
+        <div class="card-body">
+          <h5 class="card-title">${game.title}</h5>
+          <p class="card-text">${game.short_description}</p>
+          <p class="card-text"><small class="text-muted">${game.genre}</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
+`;
+
 const createDetailGames = (game) => `
 <div class="gameThumbnail">
   <div class="gameThumbnailBG">
@@ -388,4 +407,5 @@ export {
   createGameBasePlatformBroswer,
   createBookmarkGamesTemplate,
   createUnbookmarkGamesTemplate,
+  createGameByBookmark,
 };
