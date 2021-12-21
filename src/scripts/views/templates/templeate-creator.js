@@ -4,7 +4,7 @@ const createGamesRecomendation = (game) => `
     <div class="card">
       <img src="${game.thumbnail}" class="card-img-top" alt="${game.thumbnail}">
       <div class="card-body">
-        <h4 class="card-text">${game.title}</h4>
+        <h4 class="card-text box-title">${game.title}</h4>
     </div>
   </a>
 </div>
