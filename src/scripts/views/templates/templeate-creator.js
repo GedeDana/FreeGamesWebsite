@@ -4,7 +4,7 @@ const createGamesRecomendation = (game) => `
     <div class="card">
       <img src="${game.thumbnail}" class="card-img-top" alt="${game.thumbnail}">
       <div class="card-body">
-        <h4 class="card-text">${game.title}</h4>
+        <h4 class="card-text box-title">${game.title}</h4>
     </div>
   </a>
 </div>
@@ -279,9 +279,9 @@ const createDetailGamesNoMinimumSpec = (game) => `
   <hr>
   <div class="row">
     <div class="col">
-      <p>${game.title} is a browser based game and should run smoothly on practically any PC with a updated web-browser.</p>
+      <p>${game.title} is a browser based game and should run smoothly on any PC with a updated web-browser such as Firefox, Chrome, or Mircosoft Edge. </p>
       <br>
-      <p>If you have old hardware or software, you may still be able to play Elvenar, but your game experience may suffer. For the best gameplay experience, we recommend the latest versions of Firefox, Chrome, or Internet Explorer.</p>
+      <p>If you have old hardware or software, you may still be able to play, but your game experience may suffer.</p>
     </div>
   </div>
 </div>

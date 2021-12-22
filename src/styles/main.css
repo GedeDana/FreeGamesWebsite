@@ -117,10 +117,10 @@ hr {
     position: relative;
 }
 
-.gameThumbnailBG >  img {
+.gameThumbnailBG > img {
     margin: 0 auto;
     width: 70%;
-    height: 600px;
+    max-height: 600px;
     display: block;
 }
 

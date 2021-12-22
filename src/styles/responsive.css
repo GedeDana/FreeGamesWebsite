@@ -1,4 +1,10 @@
 /* breakpoints */
+@media (max-width: 1480px) {
+    .gameThumbnailBG > video {
+        display: none;
+    }
+}
+
 @media (max-width: 992px) { 
     .infoGroup {
         display: inline;
@@ -13,4 +19,8 @@
         margin-top: 8px;
         width: 100%;
     }
+    .box-title {
+        font-size: small;
+    }
 }
+
