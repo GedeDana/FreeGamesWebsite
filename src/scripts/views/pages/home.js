@@ -6,12 +6,13 @@ import {
 const home = {
   async render() {
     return `
+    <a href="#skipLink" class="skip-link">Skip to Content ?</a>
     <div id="jumbotron" class="jumbotron">
       <div class="layer"></div>
       <h2 class="headline">Explore Free Games For Free</h2>
     </div>
-
-    <div class="card-recommendations" tabindex="0">
+   
+    <div class="card-recommendations" id="skipLink" tabindex="0">
        <div class="container">
         <h3 class="title fw-bold">Recommendations</h3>
           <div class="row row-cols-2 row-cols-lg-4 g-3" id="game-container">

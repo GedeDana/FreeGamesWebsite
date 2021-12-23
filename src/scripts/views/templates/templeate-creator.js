@@ -70,7 +70,7 @@ const createGameByBookmark = (game) => `
 const createDetailGames = (game) => `
 <div class="gameThumbnail">
   <div class="gameThumbnailBG">
-    <img src="${game.thumbnail}" alt="GameTitle">
+    <img src="${game.thumbnail}" alt="GameTitle" >
       <video class="featuredVideo" autoplay loop muted alt="RocketLeague Trailer">
       <source src="https://www.freetogame.com/g/${game.id}/videoplayback.webm" type="video/webm">
     </video>

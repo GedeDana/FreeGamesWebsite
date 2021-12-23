@@ -1,4 +1,6 @@
 import 'regenerator-runtime';
+import './component/about';
+import './component/navigation';
 import '../styles/main.css';
 import '../styles/responsive.css';
 import App from './views/app';
