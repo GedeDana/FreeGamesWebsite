@@ -21,6 +21,10 @@ class Navigation extends HTMLElement {
           <hr>
           <ul class="navbar-nav me-2 mb-2 mb-lg-0">
             <li class="nav-item">
+              <a class="nav-link mx-3" id="navlist" href="/#">Home</a>
+            </li>
+            <hr>
+            <li class="nav-item">
               <a class="nav-link mx-3" id="navlist" href="/#/list">Game List</a>
             </li>
             <hr>
