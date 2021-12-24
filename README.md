@@ -11,7 +11,6 @@ FreeGamesForU (FGFU) merupakan aplikasi _web native_ yang berguna sebagai layana
 ## Daftar Kategori
 Kategori pencarian dapat dilakukan dengan mengetik :
 - MMO
-- MMORPG
 - Shooter
 - Strategy
 - Moba
